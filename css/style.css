@@ -393,7 +393,8 @@ template {
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    font-family: 'Yeseva One', cursive; }
   .hero__content {
     max-width: 670px; }
   .hero__text {
