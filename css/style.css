@@ -567,7 +567,17 @@ img {
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0 !important; } }
+    margin-left: 0 !important; }
+  .section title__text {
+    font-size: 1rem; }
+  .section-title__text {
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem 14rem; } }
+
+@media screen and (max-width: 830px) {
+  .section-title__text {
+    margin: 1rem 12rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -588,7 +598,11 @@ img {
   .hero__button {
     display: block;
     max-width: 22.8rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .section-title__text {
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem 4rem; } }
 
 @media screen and (max-width: 520px) {
   .hero__scroll-down {
