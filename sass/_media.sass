@@ -62,7 +62,6 @@
    .hero
       &__content
          max-width: 22.86rem
-      height: 65vh
       &::after
          content: none
       &__scroll-down
@@ -82,17 +81,28 @@
             text-align: center
             margin: 1rem 1rem
 @media screen and ( max-width: 520px )
+   .section
+      &-title
+         &__heading
+            font-size: 1.65rem
    .hero
       &__scroll-down
          display: none
-   .card
-      &__item
-         &:nth-child(n+8)
+   .col
+      .card
+         &__text
+            margin-right: 5rem
+         &__list
+            &--min
+               .card
+                  &__item
+                     &:nth-child(n+8)
                         display: none
-         &:nth-child(7)
-            &::after
-                  content: '...'
-                  margin-left: 0.5rem
+                     &:nth-child(7)
+                        &::after
+                           content: '...'
+                           margin-left: 0.5rem
+         padding-right: 0.5rem
 @media screen and ( max-width: 320px )
    .hero
       &__content
