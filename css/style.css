@@ -425,6 +425,14 @@ img {
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff; }
+  .hero::after {
+    content: '';
+    width: 100%;
+    height: 3.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #131313; }
   .hero::before {
     content: '';
     position: absolute;
@@ -460,13 +468,14 @@ img {
     align-items: center;
     left: 0;
     bottom: 0;
-    min-width: 17.6rem;
-    min-height: 6.92rem;
+    min-width: 17rem;
+    min-height: 7rem;
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    font-family: 'Yeseva One', cursive; }
+    font-family: 'Yeseva One', cursive;
+    z-index: 9; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -546,10 +555,16 @@ img {
     color: #fff;
     padding: 1.214rem 2.6rem; }
 
+@media screen and (max-width: 1300px) {
+  .contacts__phone {
+    margin-right: 1rem; } }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
   .nav__item {
+    margin-right: 1rem; }
+  .contacts__phone {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 992px) {
@@ -597,8 +612,9 @@ img {
     margin-bottom: 2.28rem; }
   .hero__button {
     display: block;
-    max-width: 22.8rem;
-    margin-bottom: 1.85rem; }
+    min-width: 22.8rem;
+    margin-bottom: 1.85rem;
+    text-align: center; }
   .section-title__text {
     font-size: 1rem;
     text-align: center;
@@ -607,3 +623,10 @@ img {
 @media screen and (max-width: 520px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-width: 320px) {
+  .hero__button {
+    min-width: auto;
+    width: 100%; }
+  .hero__text {
+    width: 100%; } }
