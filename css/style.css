@@ -452,7 +452,7 @@ img {
     margin: 0.95rem 0 3.5rem; }
   .hero__button {
     margin-right: 20px;
-    min-width: 14.5rem;
+    min-width: 14.8rem;
     padding: 19px 28px; }
   .hero__instagram {
     position: absolute;
@@ -598,6 +598,8 @@ img {
     margin: 1rem 12rem; } }
 
 @media screen and (max-width: 570px) {
+  .container {
+    width: 90%; }
   .contacts__phone {
     margin-right: 0;
     color: #fff;
@@ -608,30 +610,37 @@ img {
     font-size: 1.64rem; }
   .hero {
     height: 65vh; }
+    .hero__content {
+      max-width: 22.86rem; }
     .hero::after {
       content: none; }
     .hero__scroll-down {
       display: none; }
-    .hero__content {
-      max-width: 22.86rem; }
     .hero__text {
       font-size: 1.29rem;
       margin-bottom: 2.28rem; }
     .hero__button {
       display: block;
-      min-width: 22.8rem;
+      width: 100%;
       margin-bottom: 1.85rem;
       text-align: center; }
   .section-title__text {
     font-size: 1rem;
     text-align: center;
-    margin: 1rem 4rem; } }
+    margin: 1rem 1rem; } }
 
 @media screen and (max-width: 520px) {
   .hero__scroll-down {
-    display: none; } }
+    display: none; }
+  .card__item:nth-child(n+8) {
+    display: none; }
+  .card__item:nth-child(7)::after {
+    content: '...';
+    margin-left: 0.5rem; } }
 
 @media screen and (max-width: 320px) {
+  .hero__content {
+    max-width: none; }
   .hero__button {
     min-width: auto;
     width: 100%; }

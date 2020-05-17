@@ -48,6 +48,8 @@
          &__text
             margin: 1rem 12rem           
 @media screen and ( max-width: 570px )
+   .container
+      width: 90%
    .contacts
       &__phone
          margin-right: 0
@@ -58,19 +60,19 @@
    .title
       font-size: 1.64rem
    .hero
+      &__content
+         max-width: 22.86rem
       height: 65vh
       &::after
          content: none
       &__scroll-down
          display: none
-      &__content
-         max-width: 22.86rem
       &__text
          font-size: 1.29rem
          margin-bottom: 2.28rem
       &__button
          display: block
-         min-width: 22.8rem
+         width: 100%
          margin-bottom: 1.85rem
          text-align: center  
    .section
@@ -78,19 +80,30 @@
          &__text
             font-size: 1rem
             text-align: center
-            margin: 1rem 4rem
+            margin: 1rem 1rem
 @media screen and ( max-width: 520px )
    .hero
       &__scroll-down
          display: none
+   .card
+      &__item
+         &:nth-child(n+8)
+                        display: none
+         &:nth-child(7)
+            &::after
+                  content: '...'
+                  margin-left: 0.5rem
 @media screen and ( max-width: 320px )
    .hero
+      &__content
+         max-width: none
       &__button
          min-width: auto
          width: 100%
       &__text
          width: 100%
-      &__content
+   
+
 
          
    
