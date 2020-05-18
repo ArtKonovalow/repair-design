@@ -11,10 +11,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
    closeBtn.addEventListener('click', switchModal);
 
-   (document).click(function (e) {
-      if ($(e.target).is('.modal')) {
-          closeModal();
-      }
-  });
-
 });
