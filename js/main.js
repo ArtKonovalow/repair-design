@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
    const modal = document.querySelector('.modal');
-   const modalBtn = document.querySelector('[data-toggle=modal]');
+   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
    const closeBtn = document.querySelector('.modal__close');
    const switchModal = () => {
       modal.classList.toggle('modal--visible');
@@ -10,5 +10,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
    });
 
    closeBtn.addEventListener('click', switchModal);
+
+   (document).click(function (e) {
+      if ($(e.target).is('.modal')) {
+          closeModal();
+      }
+  });
 
 });
