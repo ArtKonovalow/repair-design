@@ -695,6 +695,13 @@ img {
     margin: 1rem 12rem; } }
 
 @media screen and (max-width: 570px) {
+  .modal__dialog {
+    margin: 0 5rem; }
+  .modal__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: normal; }
   .container {
     width: 90%; }
   .contacts__phone {
@@ -737,7 +744,9 @@ img {
       display: none; }
     .col .card__list--min .card__item:nth-child(7)::after {
       content: '...';
-      margin-left: 0.5rem; } }
+      margin-left: 0.5rem; }
+  .modal__title {
+    font-size: 1rem; } }
 
 @media screen and (max-width: 320px) {
   .hero__content {
