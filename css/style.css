@@ -698,7 +698,7 @@ img {
   .modal__dialog {
     margin: 0 4rem;
     overflow-y: scroll;
-    height: 20rem; }
+    height: 40rem; }
   .modal__button {
     display: flex;
     justify-content: center;
@@ -715,7 +715,7 @@ img {
   .title {
     font-size: 1.64rem; }
   .hero__content {
-    max-width: 22.86rem; }
+    max-width: none; }
   .hero::after {
     content: none; }
   .hero__scroll-down {
