@@ -690,6 +690,13 @@ img {
     text-align: center;
     margin: 1rem 14rem; } }
 
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .hero__button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.85rem;
+    text-align: center; } }
+
 @media screen and (max-width: 830px) {
   .section-title__text {
     margin: 1rem 12rem; } }
@@ -712,9 +719,9 @@ img {
     height: 21rem; }
   .modal__button {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: normal; }
+    width: 100%;
+    margin-bottom: 1.85rem;
+    text-align: center; }
   .container {
     width: 90%; }
   .contacts__phone {
