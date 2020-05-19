@@ -696,7 +696,9 @@ img {
 
 @media screen and (max-width: 570px) {
   .modal__dialog {
-    margin: 0 5rem; }
+    margin: 0 5rem;
+    overflow-y: scroll;
+    height: 37rem; }
   .modal__button {
     display: flex;
     justify-content: center;
