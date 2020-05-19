@@ -747,13 +747,12 @@ img {
     margin-bottom: 1.85rem;
     text-align: center; }
   .section-title__text {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
     text-align: center;
-    margin: 1rem 1rem; } }
+    margin: 1.5rem 2.5rem; } }
 
 @media screen and (max-width: 520px) {
-  .section-title__heading {
-    font-size: 1.65rem; }
   .hero__scroll-down {
     display: none; }
   .col .card {
@@ -769,11 +768,16 @@ img {
     font-size: 1rem; } }
 
 @media screen and (max-width: 425px) {
-  .modal__title {
-    margin-right: 2.5rem; }
-  .modal__dialog {
+  .section-title__heading {
+    font-size: 1.85rem; }
+  .section__text {
+    font-size: 1.5rem;
+    line-height: 0.5rem; }
+  .modal {
     padding: 2rem 1.5rem;
-    margin: 0 1rem; } }
+    margin: 0 1rem; }
+    .modal__title {
+      margin-right: 2.5rem; } }
 
 @media screen and (max-width: 320px) {
   .hero__content {
