@@ -698,7 +698,7 @@ img {
   .modal__dialog {
     margin: 0 4rem;
     overflow-y: scroll;
-    height: 37rem; }
+    height: 20rem; }
   .modal__button {
     display: flex;
     justify-content: center;
