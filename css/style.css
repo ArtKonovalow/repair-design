@@ -694,6 +694,17 @@ img {
   .section-title__text {
     margin: 1rem 12rem; } }
 
+@media screen and (max-height: 570px) and (orientation: landscape) {
+  .modal__dialog {
+    margin: 0 4rem;
+    overflow-y: scroll;
+    height: 21rem; }
+  .modal__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: normal; } }
+
 @media screen and (max-width: 570px) {
   .modal__dialog {
     margin: 0 4rem;
