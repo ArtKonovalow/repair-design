@@ -782,7 +782,13 @@ img {
 
 @media screen and (max-width: 375px) {
   .hero__title {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .section-title__image {
+    margin-bottom: 3rem; }
+  .section-title__text {
+    margin: -1.5rem 1.5rem 2.9rem; }
+  .col .card__text {
+    margin-top: -11.3rem; } }
 
 @media screen and (max-width: 320px) {
   .hero__content {
