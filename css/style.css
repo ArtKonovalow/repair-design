@@ -653,6 +653,17 @@ img {
   .modal__button {
     align-self: flex-end; }
 
+.upbutton {
+  background: url("../img/up.png") no-repeat center;
+  height: 60px;
+  width: 60px;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  z-index: 999; }
+
 @media screen and (max-width: 1300px) {
   .contacts__phone {
     margin-right: 1rem; }
