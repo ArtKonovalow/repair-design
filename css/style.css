@@ -710,10 +710,14 @@ img {
   .section-title__text {
     margin: 1rem 12rem; } }
 
+@media screen and (max-height: 700px) {
+  .hero__content {
+    margin-bottom: 5rem; } }
+
 @media screen and (max-width: 630px) {
   .upbutton {
-    left: 46%;
-    bottom: 2%; } }
+    left: 50%;
+    transform: rotateX(-50%); } }
 
 @media screen and (max-height: 570px) and (orientation: landscape) {
   .modal__dialog {
