@@ -40,7 +40,7 @@ $(document).ready(function () {
          },
       })
 
-      var next = $('swiper-button-next');
+      var next = $('.swiper-button-next');
       var prev = $('.swiper-button-prev');
       var bullets = $('.swiper-pagination');
 
