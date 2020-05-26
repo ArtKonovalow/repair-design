@@ -401,6 +401,9 @@ template {
 .col-60 {
   width: 60%; }
 
+.img {
+  max-width: 100%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -696,19 +699,20 @@ img {
   font-weight: 400;
   line-height: 2.64rem;
   letter-spacing: 0.0001rem;
-  margin-bottom: 1.65rem; }
+  margin: 0 0 1.65rem; }
 
 .section-title__text {
   font-size: 1.286rem;
-  margin-right: 10rem;
   line-height: 2rem;
+  max-width: 31rem;
   margin-bottom: 3.39rem; }
 
 .swiper-slide {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 42rem; }
   .swiper-slide__text {
-    flex-basis: 40%;
+    flex-basis: 39%;
     margin-bottom: 2.5rem; }
   .swiper-slide__value {
     line-height: 1.5rem;
@@ -746,6 +750,9 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: 0; }
+
+.img-slide {
+  padding-left: 3.7rem; }
 
 @media screen and (max-width: 1300px) {
   .contacts__phone {
