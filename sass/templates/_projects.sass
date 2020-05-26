@@ -1,4 +1,6 @@
 .section
+   &--dark
+      padding-top: 126px
    &-title
       &__heading
          font-size: 2rem
@@ -16,6 +18,7 @@
       display: flex
       flex-wrap: wrap
       width: 42rem
+      margin-bottom: 4.5rem
       &__text
          flex-basis: 39%
          margin-bottom: 2.5rem
@@ -31,7 +34,11 @@
          margin-bottom: 0.51rem
          margin-top: 0
    &-pagination
+      margin-left: 14px
       &-bullet
+         width: 10px
+         height: 10px
+         margin: 0 8px 
          background-color: rgba($light, 0.3)
          &-active
             background-color: $light
@@ -44,6 +51,8 @@
          height: 14px
          &::after
             display: none
+      &-next
+         margin-left: 50px
       &-prev
          left: 0
          background: url('../img/arrow-prev.svg') no-repeat center
