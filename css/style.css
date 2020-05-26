@@ -731,11 +731,10 @@ img {
     margin-top: 0; }
 
 .swiper-pagination {
-  margin-left: 14px; }
+  margin-left: 10px; }
   .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
-    margin-right: 8px;
     background-color: rgba(255, 255, 255, 0.3); }
     .swiper-pagination-bullet-active {
       background-color: #fff; }
@@ -750,7 +749,7 @@ img {
     display: none; }
 
 .swiper-button-next {
-  margin-left: 50px; }
+  margin-left: 1.64rem; }
 
 .swiper-button-prev {
   left: 0;
@@ -765,6 +764,9 @@ img {
 
 .img-slide {
   padding-left: 3.7rem; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 0.57rem; }
 
 @media screen and (max-width: 1300px) {
   .contacts__phone {
