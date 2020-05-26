@@ -5,6 +5,10 @@
    .nav
       &__item
          margin-right: 2.3rem
+   .swiper
+      &-slide
+         &__text
+            flex-basis: 44%
 @media screen and ( max-width: 1200px )
    html
       font-size: 12px
@@ -15,6 +19,10 @@
       &__phone
          margin-right: 1rem
 @media screen and ( max-width: 992px )
+   .swiper
+      &-slide
+         &__text
+            flex-basis: 50%
    .nav
       display: none
    .hero
@@ -23,6 +31,19 @@
       &__content
          margin-left: 0
 @media screen and ( max-width: 905px )
+   .section
+      &-title
+         &__word
+            &::after
+               display: none
+   .img
+      &-slide
+         padding-left: 0
+         margin-top: 3rem
+   .col-40
+      width: 77%
+   .col-60
+      width: 77%
    .row
       flex-direction: column
       align-items: center
@@ -32,27 +53,17 @@
    .card
       &__text
          margin-left: 0 !important
-   .section
-      title
-         &__text
-            font-size: 1rem
-   .section
-      &-title
-         &__text
-            font-size: 1rem
-            text-align: center
-            margin: 1rem 14rem  
+   .swiper
+      &-container
+            background: url(img/projects/project-mobile.png)
 @media screen and ( max-width: 900px ) and (orientation: landscape)
    .hero
       &__button
          margin-bottom: 1.85rem
-         text-align: center 
-@media screen and ( max-width: 830px )
-   .section
-      &-title
-         &__text
-            margin: 1rem 12rem  
+         text-align: center   
 @media screen and ( max-height: 700px )
+   .col-40
+      width: 80%
    .hero
       &__content
          margin-bottom: 5rem
@@ -114,10 +125,11 @@
             font-size: 1.85rem
          &__text
             font-size: 1.23rem
-            line-height: 1.8rem
-            text-align: center
-            margin: 1.5rem 1.5rem
 @media screen and ( max-width: 520px )
+   .section
+      &-title
+         &__text
+            margin-right: 3rem
    .hero
       &__scroll-down
          display: none
@@ -143,10 +155,22 @@
    .hero
       &__title
          margin-right: 10rem
+   .section
+      &-title
+         &__text
+            margin-right: 1rem
 @media screen and ( max-width: 425px )
+   .col-40
+      width: 100%
+   .col-60
+      width: 100%
    .modal
       &__title
          margin-right: 4rem
+   .section
+      &-title
+         &__text
+            margin-right: 5rem
 @media screen and ( max-width: 375px )
    .menu
       &__logo
@@ -178,8 +202,6 @@
       &-title
          &__image
             margin-bottom: 3rem
-         &__text
-            margin: -1.5rem 1.5rem 2.9rem
    .col
       .card
          &__text 
@@ -187,6 +209,32 @@
    .modal
       &__title
          margin-right: 3rem
+   .section
+      &-title
+         &__heading
+            font-size: 1.68rem
+            margin: 0 0 2rem
+            letter-spacing: 0.001rem
+         &__text
+            margin-right: 2.7rem
+            letter-spacing: 0.001rem
+            line-height: 158.48%
+            font-size: 1.168rem
+            margin-bottom: 3rem
+   .swiper
+      &-button
+         &-next
+            margin-left: 2.64rem
+      &-slide
+         margin-bottom: 2rem   
+         &__text
+            flex-basis: 47%
+         &__heading
+            font-weight: 100
+            font-size: 1.15rem
+            margin-bottom: 0.7rem
+   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+      margin: 0 0.7rem
 @media screen and ( max-width: 320px )
    .hero
       &__content
@@ -199,6 +247,10 @@
    .modal
       &__title
          margin-right: 1rem
+   .section
+      &-title
+         &__text
+            margin-right: 1rem
 
    
 

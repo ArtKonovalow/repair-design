@@ -772,7 +772,9 @@ img {
   .contacts__phone {
     margin-right: 1rem; }
   .nav__item {
-    margin-right: 2.3rem; } }
+    margin-right: 2.3rem; }
+  .swiper-slide__text {
+    flex-basis: 44%; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -783,6 +785,8 @@ img {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 992px) {
+  .swiper-slide__text {
+    flex-basis: 50%; }
   .nav {
     display: none; }
   .hero__instagram {
@@ -791,6 +795,15 @@ img {
     margin-left: 0; } }
 
 @media screen and (max-width: 905px) {
+  .section-title__word::after {
+    display: none; }
+  .img-slide {
+    padding-left: 0;
+    margin-top: 3rem; }
+  .col-40 {
+    width: 77%; }
+  .col-60 {
+    width: 77%; }
   .row {
     flex-direction: column;
     align-items: center; }
@@ -798,23 +811,17 @@ img {
     margin-bottom: 5rem; }
   .card__text {
     margin-left: 0 !important; }
-  .section title__text {
-    font-size: 1rem; }
-  .section-title__text {
-    font-size: 1rem;
-    text-align: center;
-    margin: 1rem 14rem; } }
+  .swiper-container {
+    background: url(img/projects/project-mobile.png); } }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .hero__button {
     margin-bottom: 1.85rem;
     text-align: center; } }
 
-@media screen and (max-width: 830px) {
-  .section-title__text {
-    margin: 1rem 12rem; } }
-
 @media screen and (max-height: 700px) {
+  .col-40 {
+    width: 80%; }
   .hero__content {
     margin-bottom: 5rem; } }
 
@@ -871,12 +878,11 @@ img {
   .section-title__heading {
     font-size: 1.85rem; }
   .section-title__text {
-    font-size: 1.23rem;
-    line-height: 1.8rem;
-    text-align: center;
-    margin: 1.5rem 1.5rem; } }
+    font-size: 1.23rem; } }
 
 @media screen and (max-width: 520px) {
+  .section-title__text {
+    margin-right: 3rem; }
   .hero__scroll-down {
     display: none; }
   .col .card {
@@ -893,11 +899,19 @@ img {
 
 @media screen and (max-width: 475px) {
   .hero__title {
-    margin-right: 10rem; } }
+    margin-right: 10rem; }
+  .section-title__text {
+    margin-right: 1rem; } }
 
 @media screen and (max-width: 425px) {
+  .col-40 {
+    width: 100%; }
+  .col-60 {
+    width: 100%; }
   .modal__title {
-    margin-right: 4rem; } }
+    margin-right: 4rem; }
+  .section-title__text {
+    margin-right: 5rem; } }
 
 @media screen and (max-width: 375px) {
   .menu__logo {
@@ -925,12 +939,32 @@ img {
     font-size: 1.85rem; }
   .section-title__image {
     margin-bottom: 3rem; }
-  .section-title__text {
-    margin: -1.5rem 1.5rem 2.9rem; }
   .col .card__text {
     margin-top: -11.3rem; }
   .modal__title {
-    margin-right: 3rem; } }
+    margin-right: 3rem; }
+  .section-title__heading {
+    font-size: 1.68rem;
+    margin: 0 0 2rem;
+    letter-spacing: 0.001rem; }
+  .section-title__text {
+    margin-right: 2.7rem;
+    letter-spacing: 0.001rem;
+    line-height: 158.48%;
+    font-size: 1.168rem;
+    margin-bottom: 3rem; }
+  .swiper-button-next {
+    margin-left: 2.64rem; }
+  .swiper-slide {
+    margin-bottom: 2rem; }
+    .swiper-slide__text {
+      flex-basis: 47%; }
+    .swiper-slide__heading {
+      font-weight: 100;
+      font-size: 1.15rem;
+      margin-bottom: 0.7rem; }
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 0.7rem; } }
 
 @media screen and (max-width: 320px) {
   .hero__content {
@@ -941,4 +975,6 @@ img {
   .hero__text {
     width: 100%; }
   .modal__title {
+    margin-right: 1rem; }
+  .section-title__text {
     margin-right: 1rem; } }
