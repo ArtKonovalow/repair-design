@@ -30,6 +30,7 @@ $(document).ready(function () {
 
    var mySwiper = new Swiper ('.swiper-container', {
       loop: true,
+      spaceBetween: 100,
       pagination: {
          el: '.swiper-pagination',
          type: 'bullets',
