@@ -19,13 +19,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
 $(document).ready(function () {
    var modal = $('.modal'),
       modalBtn = $('[data-toggle="modal"]'),
-      closeBtn = $('.modal__close');
+      closeBtn = $('.modal__close'),
+      closeModal = () => {
+         modal.removeClass('modal--visible');
+      }
 
    modalBtn.on('click', function () {
       modal.toggleClass('modal--visible');
    });
    closeBtn.on('click', function () {
       modal.toggleClass('modal--visible');
+   });
+   $(window).on('click', function (event) {
+      if (event.target == modal[0]) {
+         closeModal();
+      }
+   });
+   $(document).on('keydown', function (event) {
+      if (event.code == 'Escape') {
+         closeModal();
+      }
    });
 
    var mySwiper = new Swiper ('.swiper-container', {
@@ -48,15 +61,7 @@ $(document).ready(function () {
       next.css('left', prev.width() + 10 + bullets.width() +10)
       bullets.css('left', prev.width() +10)
 
-   });
-
-/* 
-$(document).keydown(function(e) {
-   if (e.keyCode == 27) {
-      modal.toggleClass('modal--visible');
-   }
-});
-*/
+   }); 
 
 /* Кнопка вверх*/
 $(document).ready(function() { 

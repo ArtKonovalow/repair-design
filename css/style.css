@@ -810,9 +810,7 @@ img {
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0 !important; }
-  .swiper-container {
-    background: url(img/projects/project-mobile.png); } }
+    margin-left: 0 !important; } }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .hero__button {
