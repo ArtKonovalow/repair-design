@@ -534,15 +534,10 @@ img {
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff; }
-  .hero::after {
-    content: '';
+  .hero__down-block {
     width: 100%;
     height: 3.5rem;
     position: absolute;
-    -webkit-animation: fadeInUp 1s;
-    animation: fadeInUp 1s;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
     bottom: 0;
     left: 0;
     background-color: #131313; }
@@ -870,18 +865,6 @@ img {
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 0.57rem; }
-
-@-webkit-keyframes fadeInUp {
-  from {
-    height: 0; }
-  to {
-    height: 3.5rem; } }
-
-@keyframes fadeInUp {
-  from {
-    height: 0; }
-  to {
-    height: 3.5rem; } }
 
 @-webkit-keyframes spin {
   from {

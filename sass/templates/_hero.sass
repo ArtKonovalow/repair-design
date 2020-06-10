@@ -8,16 +8,14 @@
    background: $dark url('../img/hero-bg.jpg') no-repeat center / cover
    height: 100vh
    color: $light
-   &::after
-      content: ''
-      width: 100%
-      height: 3.5rem
-      position: absolute
-      animation: fadeInUp 1s 
-      animation-delay: 2s
-      bottom: 0
-      left: 0
-      background-color: $dark
+   &__down
+      &-block
+         width: 100%
+         height: 3.5rem
+         position: absolute
+         bottom: 0
+         left: 0
+         background-color: $dark
    &::before
       content: '' 
       position: absolute
