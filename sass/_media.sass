@@ -19,6 +19,13 @@
       &__phone
          margin-right: 1rem
 @media screen and ( max-width: 992px )
+   .hero
+      &::after
+         animation: none
+   .animate
+      &__animated 
+         transition-property: none !important
+         transform: none !important
    .swiper
       &-slide
          &__text
@@ -57,7 +64,7 @@
    .hero
       &__button
          margin-bottom: 1.85rem
-         text-align: center   
+         text-align: center  
 @media screen and ( max-height: 700px )
    .col-40
       width: 80%

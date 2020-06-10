@@ -510,6 +510,8 @@ img {
     width: 100%;
     height: 3.5rem;
     position: absolute;
+    -webkit-animation: fadeInUp 1s;
+    animation: fadeInUp 1s;
     bottom: 0;
     left: 0;
     background-color: #131313; }
@@ -838,6 +840,30 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 0.57rem; }
 
+@-webkit-keyframes fadeInUp {
+  from {
+    height: 0; }
+  to {
+    height: 3.5rem; } }
+
+@keyframes fadeInUp {
+  from {
+    height: 0; }
+  to {
+    height: 3.5rem; } }
+
+@-webkit-keyframes types-fadeInUp-first {
+  from {
+    margin-top: 30rem; }
+  to {
+    margin-top: 0; } }
+
+@keyframes types-fadeInUp-first {
+  from {
+    margin-top: 30rem; }
+  to {
+    margin-top: 0; } }
+
 @media screen and (max-width: 1300px) {
   .contacts__phone {
     margin-right: 1rem; }
@@ -855,6 +881,12 @@ img {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 992px) {
+  .hero::after {
+    -webkit-animation: none;
+    animation: none; }
+  .animate__animated {
+    transition-property: none !important;
+    transform: none !important; }
   .swiper-slide__text {
     flex-basis: 50%; }
   .nav {
