@@ -461,6 +461,35 @@ img {
         background-color: #e3b873;
         margin: 0 10px; }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #131313;
+  z-index: 999;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible; }
+
+.loader {
+  width: 75px;
+  height: 75px;
+  border: 10px solid white;
+  border-radius: 50%;
+  border-top-color: #e3b873;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: 1.5s spin infinite linear;
+  animation: 1.5s spin infinite linear; }
+
+.done {
+  opacity: 0;
+  visibility: hidden; }
+
 .header {
   position: fixed;
   top: 0;
@@ -512,6 +541,8 @@ img {
     position: absolute;
     -webkit-animation: fadeInUp 1s;
     animation: fadeInUp 1s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
     bottom: 0;
     left: 0;
     background-color: #131313; }
@@ -851,6 +882,18 @@ img {
     height: 0; }
   to {
     height: 3.5rem; } }
+
+@-webkit-keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); } }
 
 @-webkit-keyframes types-fadeInUp-first {
   from {
