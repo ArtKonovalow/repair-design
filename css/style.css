@@ -920,8 +920,6 @@ img {
     text-align: center; } }
 
 @media screen and (max-height: 700px) {
-  .col-40 {
-    width: 80%; }
   .hero__content {
     margin-bottom: 5rem; } }
 
