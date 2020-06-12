@@ -66,8 +66,7 @@ $(document).ready(function () {
       
       // Валидация формы
       $('.modal__form').validate({
-         errorLabelContainer: "#messageBox",
-         wrapper: "div",
+         errorElement: "div",
          errorClass: "invalid",
          rules: {
             userName: {

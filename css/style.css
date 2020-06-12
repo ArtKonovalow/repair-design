@@ -386,7 +386,7 @@ template {
     justify-content: center;
     margin: auto; }
 
-label.invalid {
+div.invalid {
   color: tomato; }
 
 input.invalid {
