@@ -384,11 +384,12 @@ template {
     margin-right: 0.64rem; }
   .policy__label--center {
     justify-content: center;
-    margin: auto; }
+    margin: auto;
+    margin-top: 0.15rem; }
 
 div.invalid {
   position: absolute;
-  margin-top: 4.5rem;
+  margin-top: 4rem;
   color: tomato; }
 
 input.invalid {
@@ -627,21 +628,25 @@ img {
     background-color: rgba(0, 0, 0, 0.8); }
 
 .control__text {
-  max-width: 40.785rem;
+  max-width: 40rem;
   margin: auto;
-  margin-bottom: 4.285rem;
+  margin-bottom: 4.5rem;
   text-align: center;
   font-size: 1.428rem;
   line-height: 2.4rem; }
-  .control__text::before {
-    content: '';
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    width: 55px;
-    height: 2px;
-    background-color: #e3b873;
-    border-radius: 30px; }
+
+.control__input--dark {
+  color: #131313; }
+
+.control__input::before {
+  content: '';
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+  width: 55px;
+  height: 2px;
+  background-color: #e3b873;
+  border-radius: 30px; }
 
 .control__form {
   display: flex;
@@ -709,10 +714,10 @@ img {
   padding: 1.214rem 2.6rem; }
 
 .footer {
-  background: #131313 url("..img/footer-bg.jpg") no-repeat center/cover;
+  background: #131313 url("../img/bg-footer.jpg") no-repeat center/cover;
   padding-top: 3rem; }
-  .footer-wrap {
-    background-color: #181818;
+  .footer__wrap {
+    background: #131313 url("../img/footer-modal-bg.svg") no-repeat center/cover;
     max-width: 63.07rem;
     margin: auto;
     margin-bottom: 3.714rem;
@@ -732,11 +737,11 @@ img {
     max-width: 37.142rem;
     margin: auto; }
   .footer__input {
-    padding-top: 0.3rem; }
+    padding-top: 0.2rem; }
     .footer__input-group {
       display: flex;
       flex-direction: column;
-      flex-basis: 45%;
+      flex-basis: 44%;
       margin-bottom: 3.2rem; }
       .footer__input-group--full-width {
         flex-basis: 100%;
@@ -1057,6 +1062,15 @@ img {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 425px) {
+  .policy__label--center {
+    margin: 0; }
+  .footer__button {
+    width: 100%; }
+  .footer__wrap {
+    background: none;
+    padding: 0; }
+  .footer__input-group {
+    flex-basis: 100%; }
   .col-40 {
     width: 100%; }
   .col-60 {

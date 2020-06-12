@@ -65,13 +65,14 @@ $(document).ready(function () {
       new WOW().init();
       
       // Валидация формы
+      // modal__form
       $('.modal__form').validate({
          errorElement: "div",
          errorClass: "invalid",
          rules: {
             userName: {
                required: true,
-               minlength: 5,
+               minlength: 2,
                maxlength: 15
             },
             userPhone: {
@@ -97,7 +98,62 @@ $(document).ready(function () {
            }
          }
       });
-
+      // control__form
+      $('.control__form').validate({
+         errorElement: "div",
+         errorClass: "invalid",
+         rules: {
+            userName: {
+               required: true,
+               minlength: 2,
+               maxlength: 15
+            },
+            userPhone: {
+               required: true
+            },
+         },
+         messages: {
+           userName: {
+           required: "Пожалуйста, укажите имя",
+           minlength: "Слишком короткое имя",
+           maxlength: "Слишком длинное имя"
+           },
+           userPhone: {
+            required: "Необходимо указать номер телефона"
+           },
+         }
+      });
+      // footer__form
+      $('.footer__form').validate({
+         errorElement: "div",
+         errorClass: "invalid",
+         rules: {
+            userName: {
+               required: true,
+               minlength: 2,
+               maxlength: 15
+            },
+            userPhone: {
+               required: true
+            },
+            userQuestion: {
+              required: true
+            }
+         },
+         messages: {
+           userName: {
+           required: "Пожалуйста, укажите имя",
+           minlength: "Слишком короткое имя",
+           maxlength: "Слишком длинное имя"
+           },
+           userPhone: {
+            required: "Необходимо указать номер телефона"
+           },
+           userQuestion: {
+             required: "Пожалуйста, введите ваш вопрос"
+           }
+         }
+      });
       // Маска для телефона
       $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(___)-___-__-__"});
 
