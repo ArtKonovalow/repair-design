@@ -41,6 +41,7 @@ $(document).ready(function () {
       }
    });
 
+   // Слайдер
    var mySwiper = new Swiper ('.swiper-container', {
       loop: true,
       spaceBetween: 100,
@@ -62,8 +63,42 @@ $(document).ready(function () {
       bullets.css('left', prev.width() +10)
 
       new WOW().init();
+      
+      // Валидация формы
+      $('.modal__form').validate({
+         errorClass: "invalid",
+         rules: {
+            userName: {
+               required: true,
+               minlength: 5
+            },
+            userPhone: {
+               required: true
+            },
+            userEmail: {
+              required: true,
+              email: true
+            }
+         },
+         messages: {
+           userName: {
+           required: "Пожалуйста, укажите имя",
+           minlength: "Слишком короткое имя"
+           },
+           userPhone: {
+            required: "Необходимо указать номер телефона "
+           },
+           userEmail: {
+             required: "Необходимо указать почту",
+             email: "Введите в формате repair-design@gmail.com"
+           }
+         }
+      });
 
-   }); 
+      // Маска для телефона
+      $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(___)-___-__-__"});
+
+   });
 
 /* Кнопка вверх*/
 $(document).ready(function() { 
