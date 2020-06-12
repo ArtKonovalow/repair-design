@@ -66,11 +66,14 @@ $(document).ready(function () {
       
       // Валидация формы
       $('.modal__form').validate({
+         errorLabelContainer: "#messageBox",
+         wrapper: "div",
          errorClass: "invalid",
          rules: {
             userName: {
                required: true,
-               minlength: 5
+               minlength: 5,
+               maxlength: 15
             },
             userPhone: {
                required: true
@@ -83,10 +86,11 @@ $(document).ready(function () {
          messages: {
            userName: {
            required: "Пожалуйста, укажите имя",
-           minlength: "Слишком короткое имя"
+           minlength: "Слишком короткое имя",
+           maxlength: "Слишком длинное имя"
            },
            userPhone: {
-            required: "Необходимо указать номер телефона "
+            required: "Необходимо указать номер телефона"
            },
            userEmail: {
              required: "Необходимо указать почту",
