@@ -24,6 +24,15 @@
       text-align: center
       font-size: 1.428rem
       line-height: 2.4rem
+      &::before
+         content: ''
+         width: 55px
+         height: 2px
+         display: block
+         border-radius: 30px
+         background-color: $primary
+         margin: auto
+         margin-bottom: 2rem
    &__input
       &--dark
          color: $dark
@@ -43,6 +52,7 @@
       max-width: 55rem
       margin: auto
    &__input-group
+      position: relative
       display: flex
       flex-direction: column
       flex-basis: 30%

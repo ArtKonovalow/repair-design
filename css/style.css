@@ -634,6 +634,15 @@ img {
   text-align: center;
   font-size: 1.428rem;
   line-height: 2.4rem; }
+  .control__text::before {
+    content: '';
+    width: 55px;
+    height: 2px;
+    display: block;
+    border-radius: 30px;
+    background-color: #e3b873;
+    margin: auto;
+    margin-bottom: 2rem; }
 
 .control__input--dark {
   color: #131313; }
@@ -656,6 +665,7 @@ img {
   margin: auto; }
 
 .control__input-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-basis: 30%; }
@@ -679,7 +689,7 @@ img {
 .types__section-title {
   margin-bottom: 2rem; }
 
-.types .card__text {
+.card__text {
   position: relative;
   max-width: 23.6rem;
   margin: 0 auto;
@@ -688,13 +698,13 @@ img {
   background-color: #fff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
 
-.types .card__title {
+.card__title {
   font-family: 'Yeseva One', cursive;
   font-size: 1.29rem;
   margin-top: 0;
   margin-bottom: 0.7rem; }
 
-.types .card__list, .types .card__list--min {
+.card__list, .card__list--min {
   padding: 0 0 0 1rem;
   margin: 0;
   font-size: 1.07rem;
@@ -702,7 +712,7 @@ img {
   color: #959595;
   margin-bottom: 2.5rem; }
 
-.types .card__pricetag {
+.card__pricetag {
   position: absolute;
   left: 0;
   bottom: -1.87rem;
@@ -830,11 +840,11 @@ img {
   padding-top: 126px; }
 
 .section-title__heading {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.64rem;
-  letter-spacing: 0.0001rem;
-  margin: 0 0 1.65rem; }
+  letter-spacing: 0.02rem;
+  margin: 0 0 0.6rem; }
 
 .section-title__text {
   font-size: 1.286rem;
@@ -900,6 +910,75 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 0.57rem; }
 
+.section-title__text {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.01rem;
+  margin: auto; }
+
+.team__card {
+  position: relative;
+  margin-top: 4.1rem;
+  flex-basis: 30%; }
+
+.team__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+
+.team__experience {
+  display: block;
+  margin-top: 1.65rem;
+  padding: 1rem 3.2rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 0.93rem;
+  text-transform: uppercase;
+  background-color: #e3b873;
+  color: #fff; }
+
+.team__position {
+  font-size: 1.3rem; }
+
+.team__text {
+  max-width: 50rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 10rem; }
+  .team__text::before {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 55px;
+    height: 2px;
+    background-color: #e3b873;
+    border-radius: 30px; }
+
+.image-icon {
+  position: relative; }
+
+.bg-icon {
+  position: absolute;
+  top: -35px;
+  left: -35px;
+  width: 70px;
+  height: 70px;
+  background-color: #e3b873; }
+
+.card__title {
+  display: block; }
+
+.card__description {
+  position: absolute;
+  text-align: center;
+  top: 19.8rem;
+  padding: 1.6rem 1.6rem 0;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05); }
+
 @-webkit-keyframes spin {
   from {
     transform: translate(-50%, -50%) rotate(0deg); }
@@ -957,6 +1036,13 @@ img {
     margin-left: 0; } }
 
 @media screen and (max-width: 905px) {
+  .control__button {
+    margin: auto;
+    margin-top: 3rem; }
+  .control__form {
+    max-width: 40rem; }
+  .control__input-group {
+    flex-basis: 40%; }
   .section-title__word::after {
     display: none; }
   .img-slide {
@@ -1062,6 +1148,18 @@ img {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 425px) {
+  html {
+    font-size: 14px; }
+  .footer__button {
+    margin-top: 1.1rem; }
+  .footer__title {
+    margin-bottom: 3.8rem; }
+  .footer__input {
+    margin-bottom: 1rem; }
+    .footer__input-group--full-width {
+      margin-bottom: -0.5rem; }
+  .footer__menu {
+    display: none; }
   .policy__label--center {
     margin: 0; }
   .footer__button {
@@ -1078,7 +1176,28 @@ img {
   .modal__title {
     margin-right: 4rem; }
   .section-title__text {
-    margin-right: 5rem; } }
+    margin-right: 5rem; }
+  .control__policy-label {
+    margin: 0;
+    margin-top: -5rem; }
+  .control__button {
+    width: 100%;
+    margin-top: 2rem; }
+  .control__input {
+    margin-bottom: 2.5rem; }
+    .control__input-group {
+      flex-basis: 100%;
+      margin-bottom: 2rem; }
+  .control__video {
+    min-height: 14.8rem; }
+  .control__text {
+    max-width: 24rem;
+    font-size: 0.99rem;
+    line-height: 169.8%;
+    margin-bottom: 2.5rem; }
+  .video__play {
+    max-width: 4.5rem;
+    max-height: 4.5rem; } }
 
 @media screen and (max-width: 375px) {
   .menu__logo {
