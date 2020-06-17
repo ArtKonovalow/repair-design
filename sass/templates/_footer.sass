@@ -1,12 +1,11 @@
+footer
+   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover
 .footer
-   background: $dark url('../img/bg-footer.jpg') no-repeat center / cover
    padding-top: 3rem
    &__wrap
       background: $dark url('../img/footer-modal-bg.svg') no-repeat center / cover
       max-width: 63.07rem
-      margin: auto
-      margin-top: 
-      margin-bottom: 3.714rem
+      margin: -22.5rem auto 3.714rem
       padding: 2.5rem
    &__title
       text-transform: uppercase
@@ -14,8 +13,15 @@
       font-weight: normal
       font-size: 1.428rem
       text-align: center
-      margin-bottom: 3.214rem
+      margin-bottom: 1.75rem
       margin-top: 0
+   &__icons
+      display: flex
+      justify-content: space-between
+      max-width: 5.2rem
+      margin: auto
+   &__contacts
+      margin-bottom: 3.1rem
    &__form
       display: flex
       flex-wrap: wrap
@@ -41,10 +47,27 @@
    &__menu
       background-color: $dark
       padding: 4.285rem 0
-   &__map
-      margin-bottom: 4rem
-      min-height: 33rem
    &__phone
       color: $primary
-
+      text-decoration: none
+   &__icon
+      &_mail
+         max-width: 28px
+         max-height: 28px
+         &::after
+            background: url('../img/footer-mail.png') center no-repeat
+            max-width: 28px
+            max-height: 28px
+      &_instagram
+         max-width: 28px
+         max-height: 28px
+         &::after
+            background: url('../img/footer-inst.png') center no-repeat
+            width: 28px
+            height: 28px
+   &__map
+      max-width: 800px
+      min-height: 33.214rem
+      margin: auto
+      margin-bottom: 4rem
 
