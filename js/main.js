@@ -134,10 +134,14 @@ $(document).ready(function () {
                maxlength: 15
             },
             userPhone: {
-               required: true
+               required: true,
+               minlength: 11
             },
             userQuestion: {
               required: true
+            },
+            policyСheckbox: {
+               required: true
             }
          },
          messages: {
@@ -147,11 +151,15 @@ $(document).ready(function () {
            maxlength: "Слишком длинное имя"
            },
            userPhone: {
-            required: "Необходимо указать номер телефона"
+            required: "Необходимо указать номер телефона",
+            minlength: "Введите полностью номер"
            },
            userQuestion: {
              required: "Пожалуйста, введите ваш вопрос"
-           }
+           },
+           policyСheckbox: {
+            required: "Поставьте галочку"
+         }
          }
       });
       // Маска для телефона

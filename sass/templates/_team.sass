@@ -1,41 +1,38 @@
-.section-title__text
+.section-title__description
+   max-width: 32rem
    font-size: 1.4rem
    line-height: 2rem
    letter-spacing: 0.01rem
    margin: auto
 .team
-   &__card
+   &-card
       position: relative
       margin-top: 4.1rem
-      flex-basis: 30%
-   &__icon
-      position: absolute
-      top: 50%
-      left: 50%
-      margin-right: -50%
-      transform: translate(-50%, -50%)
-   &__experience
-      display: block
-      margin-top: 1.6rem
-      padding: 1.1rem 2.83rem
-      font-family: 'Yeseva One', cursive
-      font-size: 0.85rem
-      letter-spacing: 0.05rem
-      text-transform: uppercase
-      background-color: $primary
-      color: $light
-   &__position
-      font-size: 1.3rem
+      &__block
+         position: absolute
+         top: -35px
+         left: -35px
+         background-color: $primary
+         width: 70px
+         height: 70px
+      &__icon
+         position: absolute
+         top: 50%
+         left: 50%
+         margin-right: -50%
+         transform: translate(-50%, -50%)
    &__text
-      max-width: 50rem
+      max-width: 40rem
       margin: auto
       text-align: center
-      margin-top: 25rem
+      margin-top: 7.7rem
+      font-size: 1.43rem
+      line-height: 2.43rem
       &::before
          content: ''
          display: block
          margin: auto
-         margin-bottom: 2rem
+         margin-bottom: -0.9rem
          width: 55px
          height: 2px
          background-color: $primary
@@ -52,18 +49,26 @@
 .card
    &__title
       display: block
+      margin-top: 0.2rem
    &__description
-      position: relative
-      margin: auto
+      position: absolute
+      left: 7.5%
       padding-top: 1.5rem
-      max-width: 18rem
+      width: 86%
       text-align: center
       top: 19.8rem
-      z-index: 999
       background-color: $light
       box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05)
-.row__team
-   display: flex
-   align-items: center
-   justify-content: space-around
+   &__experience
+      display: block
+      margin-top: 1.6rem
+      padding: 1.1rem 2.83rem
+      font-family: 'Yeseva One', cursive
+      font-size: 0.85rem
+      letter-spacing: 0.05rem
+      text-transform: uppercase
+      background-color: $primary
+      color: $light
+   &__position
+      font-size: 1.3rem
    

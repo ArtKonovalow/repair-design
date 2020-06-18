@@ -1000,48 +1000,42 @@ footer {
       max-width: 32.34px;
       height: 31.334px; }
 
-.section-title__text {
+.section-title__description {
+  max-width: 32rem;
   font-size: 1.4rem;
   line-height: 2rem;
   letter-spacing: 0.01rem;
   margin: auto; }
 
-.team__card {
+.team-card {
   position: relative;
-  margin-top: 4.1rem;
-  flex-basis: 30%; }
-
-.team__icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%); }
-
-.team__experience {
-  display: block;
-  margin-top: 1.6rem;
-  padding: 1.1rem 2.83rem;
-  font-family: 'Yeseva One', cursive;
-  font-size: 0.85rem;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-  background-color: #e3b873;
-  color: #fff; }
-
-.team__position {
-  font-size: 1.3rem; }
+  margin-top: 4.1rem; }
+  .team-card__block {
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    background-color: #e3b873;
+    width: 70px;
+    height: 70px; }
+  .team-card__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
 
 .team__text {
-  max-width: 50rem;
+  max-width: 40rem;
   margin: auto;
   text-align: center;
-  margin-top: 25rem; }
+  margin-top: 7.7rem;
+  font-size: 1.43rem;
+  line-height: 2.43rem; }
   .team__text::before {
     content: '';
     display: block;
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: -0.9rem;
     width: 55px;
     height: 2px;
     background-color: #e3b873;
@@ -1059,23 +1053,37 @@ footer {
   background-color: #e3b873; }
 
 .card__title {
-  display: block; }
+  display: block;
+  margin-top: 0.2rem; }
 
 .card__description {
-  position: relative;
-  margin: auto;
+  position: absolute;
+  left: 7.5%;
   padding-top: 1.5rem;
-  max-width: 18rem;
+  width: 86%;
   text-align: center;
   top: 19.8rem;
-  z-index: 999;
   background-color: #fff;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05); }
 
-.row__team {
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
+.card__experience {
+  display: block;
+  margin-top: 1.6rem;
+  padding: 1.1rem 2.83rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  background-color: #e3b873;
+  color: #fff; }
+
+.card__position {
+  font-size: 1.3rem; }
+
+.footer__map {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 @-webkit-keyframes spin {
   from {
