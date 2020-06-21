@@ -76,26 +76,37 @@ $(document).ready(function () {
                maxlength: 15
             },
             userPhone: {
-               required: true
+               required: true,
+               minlength: 17
             },
             userEmail: {
               required: true,
               email: true
+            },
+            policyCheckbox: {
+               required: true
             }
          },
          messages: {
-           userName: {
-           required: "Пожалуйста, укажите имя",
-           minlength: "Слишком короткое имя",
-           maxlength: "Слишком длинное имя"
-           },
-           userPhone: {
-            required: "Необходимо указать номер телефона"
-           },
-           userEmail: {
-             required: "Необходимо указать почту",
-             email: "Введите в формате repair-design@gmail.com"
-           }
+            userName: {
+            required: "Пожалуйста, укажите имя",
+            minlength: "Слишком короткое имя",
+            maxlength: "Слишком длинное имя"
+            },
+            userPhone: {
+               required: "Необходимо указать номер телефона",
+               minlength: "Неправильный номер телефона"
+            },
+            userEmail: {
+               required: "Необходимо указать почту",
+               email: "Введите в формате repair-design@gmail.com"
+            },
+            policyCheckbox: {
+               required: "Поставте галочку"
+            }
+         },
+         submitHandler: function(form) {
+            $(form).ajax.Submit();
          }
       });
       // control__form
@@ -109,18 +120,26 @@ $(document).ready(function () {
                maxlength: 15
             },
             userPhone: {
-               required: true
+               required: true,
+               minlength: 17
             },
+            policyCheckbox: {
+               required: true
+            }
          },
          messages: {
-           userName: {
-           required: "Пожалуйста, укажите имя",
-           minlength: "Слишком короткое имя",
-           maxlength: "Слишком длинное имя"
-           },
-           userPhone: {
-            required: "Необходимо указать номер телефона"
-           },
+            userName: {
+            required: "Пожалуйста, укажите имя",
+            minlength: "Слишком короткое имя",
+            maxlength: "Слишком длинное имя"
+            },
+            userPhone: {
+               required: "Необходимо указать номер телефона",
+               minlength: "Неправильный номер телефона"
+            },
+            policyCheckbox: {
+               required: "Поставте галочку"
+            }
          }
       });
       // footer__form
@@ -135,31 +154,31 @@ $(document).ready(function () {
             },
             userPhone: {
                required: true,
-               minlength: 11
+               minlength: 17
             },
             userQuestion: {
               required: true
             },
-            policyСheckbox: {
+            policyCheckbox: {
                required: true
             }
          },
          messages: {
-           userName: {
-           required: "Пожалуйста, укажите имя",
-           minlength: "Слишком короткое имя",
-           maxlength: "Слишком длинное имя"
-           },
+            userName: {
+            required: "Пожалуйста, укажите имя",
+            minlength: "Слишком короткое имя",
+            maxlength: "Слишком длинное имя"
+            },
            userPhone: {
             required: "Необходимо указать номер телефона",
-            minlength: "Введите полностью номер"
-           },
+            minlength: "Неправильный номер телефона"
+            },
            userQuestion: {
-             required: "Пожалуйста, введите ваш вопрос"
-           },
-           policyСheckbox: {
-            required: "Поставьте галочку"
-         }
+            required: "Пожалуйста, введите ваш вопрос"
+            },
+           policyCheckbox: {
+            required: "Поставте галочку"
+            }
          }
       });
       // Маска для телефона
