@@ -268,6 +268,7 @@ $(document).ready(function() {
            iconImageOffset: [-5, -38]
        });
    myMap.geoObjects
-       .add(myPlacemark)
+       .add(myPlacemark),
+   myMap.behaviors.disable(["scrollZoom"])
    });
 });
