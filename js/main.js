@@ -113,7 +113,16 @@ $(document).ready(function () {
             }
          },
          submitHandler: function(form) {
-            $(form).ajax.Submit();
+            $.ajax({
+               type: "POST",
+               url: "send.php",
+               data: $(form).serialize(),
+               success: function (response) {
+                  alert('Ваша заявка принята, мы свяжемся с вами через 10 мниут');
+                  $(form)[0].reset();
+                  modal.removeClass('modal--visible');
+               }
+            });
          }
       });
       // control__form
