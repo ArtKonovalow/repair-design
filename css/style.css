@@ -337,6 +337,8 @@ template {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff; }
+    .button--outline:hover {
+      background-color: rgba(255, 255, 255, 0.2); }
 
 .label {
   font-size: 1.07rem; }
@@ -491,7 +493,10 @@ img {
 .logo {
   font-size: 1.082em;
   color: #e3b873;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none; }
+  .logo:hover {
+    text-decoration: underline; }
 
 .nav__item {
   color: #fff;
@@ -504,6 +509,8 @@ img {
 
 .phone {
   color: #e3b873; }
+  .phone:hover {
+    text-decoration: none; }
 
 .contacts__phone {
   margin-right: 45px; }
@@ -569,6 +576,8 @@ img {
     font-family: 'Yeseva One', cursive;
     z-index: 9;
     font-size: 0.85rem; }
+    .hero__scroll-down:hover {
+      color: #e3b873; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -591,6 +600,8 @@ img {
     color: #e3b873;
     transform: rotate(90deg);
     line-height: 0.9; }
+    .instagram__link:hover {
+      text-decoration: underline; }
     .instagram__link::after {
       content: '';
       width: 50px;
@@ -675,6 +686,8 @@ img {
 
 .control__button {
   padding: 1.2857rem 4.7857rem; }
+  .control__button:hover {
+    box-shadow: 0 5px 15px rgba(19, 19, 19, 0.5); }
 
 .control__policy {
   flex-basis: 100%;
@@ -686,6 +699,9 @@ img {
   position: relative;
   margin: auto;
   cursor: pointer; }
+  .video__play:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-out; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -779,6 +795,9 @@ footer {
     display: inline-block;
     color: #e3b873;
     text-decoration: none; }
+  .footer__icon:hover {
+    transform: scale(1.1);
+    transition: all 0.1s ease-out; }
   .footer__icon_mail {
     max-width: 28px;
     max-height: 28px; }

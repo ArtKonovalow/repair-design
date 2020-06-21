@@ -35,7 +35,7 @@ try {
     if ($mail->send()) {
         echo "ok";
     } else {
-        echo "Во время отправления заявки произошла ошибка. Код ошибки: {$mail->ErrorInfo}"
+        echo "Во время отправления заявки произошла ошибка. Код ошибки: {$mail->ErrorInfo}";
     }
 
 } catch (Exception $e) {
