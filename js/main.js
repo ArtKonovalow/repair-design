@@ -87,6 +87,13 @@ $(document).ready(function () {
                required: true
             }
          },
+         errorPlacement: function (error, element) {
+            if (element.attr("type") == "checkbox") {
+                return element.next('label').append(error);
+            }
+        
+             error.insertAfter($(element));
+        },
          messages: {
             userName: {
             required: "Пожалуйста, укажите имя",
@@ -102,7 +109,7 @@ $(document).ready(function () {
                email: "Введите в формате repair-design@gmail.com"
             },
             policyCheckbox: {
-               required: "Поставте галочку"
+               required: ""
             }
          },
          submitHandler: function(form) {
@@ -127,6 +134,13 @@ $(document).ready(function () {
                required: true
             }
          },
+         errorPlacement: function (error, element) {
+            if (element.attr("type") == "checkbox") {
+                return element.next('label').append(error);
+            }
+        
+             error.insertAfter($(element));
+        },
          messages: {
             userName: {
             required: "Пожалуйста, укажите имя",
@@ -138,7 +152,7 @@ $(document).ready(function () {
                minlength: "Неправильный номер телефона"
             },
             policyCheckbox: {
-               required: "Поставте галочку"
+               required: ""
             }
          }
       });
@@ -163,6 +177,13 @@ $(document).ready(function () {
                required: true
             }
          },
+         errorPlacement: function (error, element) {
+            if (element.attr("type") == "checkbox") {
+                return element.next('label').append(error);
+            }
+        
+             error.insertAfter($(element));
+        },
          messages: {
             userName: {
             required: "Пожалуйста, укажите имя",
@@ -177,13 +198,28 @@ $(document).ready(function () {
             required: "Пожалуйста, введите ваш вопрос"
             },
            policyCheckbox: {
-            required: "Поставте галочку"
+            required: ""
             }
          }
       });
       // Маска для телефона
       $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(___)-___-__-__"});
-
+      // video
+      var player;
+    $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '465',
+            width: '100%',
+            videoId: 'RHzzLqJWqHs',
+            events: {
+                'onReady': videoPlay
+            }
+        });
+        $('.video__play').css('max-height', '31rem');
+    })
+    function videoPlay(event) {
+        event.target.playVideo();
+    }
    });
 
 /* Кнопка вверх*/
