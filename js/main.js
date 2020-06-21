@@ -203,7 +203,7 @@ $(document).ready(function () {
          }
       });
       // Маска для телефона
-      $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7(___)-___-__-__"});
+      $('[type=tel]').mask('+7(000) 00-00-000');
       // video
       var player;
     $('.video__play').on('click', function onYouTubeIframeAPIReady() {
