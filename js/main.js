@@ -89,10 +89,9 @@ $(document).ready(function () {
          },
          errorPlacement: function (error, element) {
             if (element.attr("type") == "checkbox") {
-                return element.next('label').append(error);
+               return element.next('label').append(error);
             }
-        
-             error.insertAfter($(element));
+            error.insertAfter($(element));
         },
          messages: {
             userName: {
@@ -109,7 +108,7 @@ $(document).ready(function () {
                email: "Введите в формате repair-design@gmail.com"
             },
             policyCheckbox: {
-               required: ""
+               required: "Поставте галочку"
             }
          },
          submitHandler: function(form) {
@@ -118,10 +117,14 @@ $(document).ready(function () {
                url: "send.php",
                data: $(form).serialize(),
                success: function (response) {
-                  alert('Ваша заявка принята, мы свяжемся с вами через 10 мниут');
                   $(form)[0].reset();
                   modal.removeClass('modal--visible');
-               }
+                  $('.modal-success');
+                  ym(65057620,'reachGoal','form');
+               },
+               error: function (response) {
+                  console.error('Форма отправлена ' + response);
+                 }
             });
          }
       });
@@ -161,14 +164,30 @@ $(document).ready(function () {
                minlength: "Неправильный номер телефона"
             },
             policyCheckbox: {
-               required: ""
+               required: "Поставте галочку"
             }
+         },
+         submitHandler: function(form) {
+            $.ajax({
+               type: "POST",
+               url: "send.php",
+               data: $(form).serialize(),
+               success: function (response) {
+                  alert('Ваша заявка принята, мы свяжемся с вами через 10 мниут');
+                  $(form)[0].reset();
+                  modal.removeClass('modal--visible');
+                  ym(65057620,'reachGoal','form');
+               },
+               error: function (response) {
+                  console.error('Форма отправлена ' + response);
+                 }
+            });
          }
       });
       // footer__form
       $('.footer__form').validate({
          errorElement: "div",
-         errorClass: "invalid",
+         errorClass: "footer-invalid",
          rules: {
             userName: {
                required: true,
@@ -207,8 +226,24 @@ $(document).ready(function () {
             required: "Пожалуйста, введите ваш вопрос"
             },
            policyCheckbox: {
-            required: ""
+            required: "Поставте галочку"
             }
+         },
+         submitHandler: function(form) {
+            $.ajax({
+               type: "POST",
+               url: "send.php",
+               data: $(form).serialize(),
+               success: function (response) {
+                  alert('Ваша заявка принята, мы свяжемся с вами через 10 мниут');
+                  $(form)[0].reset();
+                  modal.removeClass('modal--visible');
+                  ym(65057620,'reachGoal','form');
+               },
+               error: function (response) {
+                  console.error('Форма отправлена ' + response);
+                 }
+            });
          }
       });
       // Маска для телефона

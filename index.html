@@ -28,7 +28,7 @@
             </div>
             <div class="contacts menu__contacts">
                <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-               <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+               <button onclick="ym('65057620', 'reachGoal', 'button'); return true;" class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
             </div>
          </div>
       </div>
@@ -163,11 +163,11 @@
                   <label for="control-user-form" class="label form__label control__label">Телефон</label>
                   <input type="tel" name="userPhone" class="input form__input control__input control__input--dark" id="control-user-form" placeholder="Ваш номер телефона">
                </div>
+               <button class="button button--primary control__button">Отправить</button>
                <div class="policy control__policy">
                   <input type="checkbox" name="policyCheckbox" id="control-policy-checbox" class="policy__checkbox">
                   <label for="control-policy-checbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
                </div>
-               <button class="button button--primary control__button">Отправить</button>
             </form>
          </div>
       </section>
@@ -510,6 +510,12 @@
             </div>
             <button class="button button--primary modal__button">Отправить заявку</button>
          </form>
+      </div>
+   </div>
+   <div class="modal-saccess">
+      <div class="modal-success__dialog">
+         <p class="modal-success__title">Ваша заявка принята</p>
+         <button class="modal-success__out button--primary">Закрыть</button> 
       </div>
    </div>
    <div class="upbutton" id="upbutton"></div>

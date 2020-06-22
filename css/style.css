@@ -394,6 +394,11 @@ div.invalid {
   margin-top: 4rem;
   color: tomato; }
 
+div.footer-invalid {
+  position: absolute;
+  margin-top: 1rem;
+  color: tomato; }
+
 input.invalid {
   border-bottom: 1px solid tomato; }
 
@@ -1130,6 +1135,43 @@ footer {
     margin-top: 30rem; }
   to {
     margin-top: 0; } }
+
+.modal-success {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .modal-success--visible {
+    opacity: 1;
+    visibility: visible; }
+  .modal-success__dialog {
+    max-width: 36.36rem;
+    height: 10rem;
+    position: relative;
+    background: #131313;
+    padding: 2.357rem 3.5rem 1.928rem;
+    color: #fff;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center;
+    background-size: cover;
+    margin: auto; }
+  .modal-success__title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.357rem;
+    text-align: center;
+    margin: 0; }
+  .modal-success__out {
+    margin: auto;
+    margin-top: 2rem; }
 
 @media screen and (max-width: 1300px) {
   .contacts__phone {
