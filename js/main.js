@@ -1,20 +1,8 @@
-/*
-document.addEventListener("DOMContentLoaded", function(event) {
-   const modal = document.querySelector('.modal');
-   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
-   const closeBtn = document.querySelector('.modal__close');
-   const switchModal = () => {
-      modal.classList.toggle('modal--visible');
-   }
-   modalBtn.forEach(element => {
-      element.addEventListener('click', switchModal);
-   });
-
-   closeBtn.addEventListener('click', switchModal);
-
-});
-*/
-
+$("body").on('click', '[href*="#"]', function(e){
+   var fixed_offset = 100;
+   $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+   e.preventDefault();
+ });
 /*модальное окно*/
 $(document).ready(function () {
    var modal = $('.modal'),
